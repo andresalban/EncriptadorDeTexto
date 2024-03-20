@@ -6,45 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dela+Gothic+One&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rokkitt:wght@100..900&display=swap" rel="stylesheet">
+
     <title>Encriptador de Texto</title>
 </head>
 
 <body>
     <header>
-        <img src="img/Logo.png" alt="logo Alura">
+        <img class="logo" src="https://www.aluracursos.com/assets/img/testimonios/oracle-one/oracle-alura-latam.1686744883.svg" alt="Logotipos da Oracle e da Alura">
     </header>
     <main>
         <section>
             <textarea class="text-area" cols="30" rows="10" placeholder="Ingrese su texto aquí"></textarea>
-            <div>
-                <label class="informacion">Solo letras minúsculas y sin acentos</label>
-            </div>
-            <div class="botones">
-                <button class="btn-encriptar" type="submit" onclick="encriptar"> <img width="36" height="36" src="img/encriptar.png"
-                        alt="encriptar" />
-                    Encriptar</button>
-                <button class="btn-desencriptar" type="submit" onclick="desencriptar"> <img width="36" height="36" src="img/desencriptar.png"
-                        alt="Desencriptar" />
-                    Desencriptar</button>
-                
-            </div>
-
+            <textarea class="mensaje" cols="30" rows="10"></textarea>
         </section>
+
+        <div>
+            <label class="informacion">Solo letras minúsculas y sin acentos</label>
+        </div>
 
         <section>
-            <textarea class="mensaje" cols="30" rows="10"></textarea>
-            <div>
-                <button class="btn-copiar" onclick="copiar"> <img src="img/copiar.png" alt="copy">Copiar</button>
-            </div>
-
+            <button class="btn-encriptar" type="submit" onclick="encriptar">
+                Encriptar</button>
+            <button class="btn-desencriptar" type="submit" onclick="desencriptar">
+                Desencriptar</button>
+            <button class="btn-copiar" onclick="copiar">Copiar</button>
         </section>
     </main>
+
     <footer>
-        <label for="">Desarrollado por andres alban</label>
+        <label>Desarrollado por Andrés Albán</label>
         <a href="https://github.com/andresalban">
-            <img src="img/github-mark.png" alt="github " style="width:42px;height:42px;">
+            <img src="img/github-mark.png" alt="github">
         </a>
     </footer>
+    
 </body>
 
 </html>

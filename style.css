@@ -1,0 +1,151 @@
+body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 30s ease infinite;
+    height: 100vh;
+   
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+* {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 26px;
+    line-height: 150%;
+    
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-left: 80px;
+}
+
+.logo {
+    padding-top: 10px;
+    margin-left: 10px;
+   
+}
+
+textarea {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    resize: none;
+    height: 300px;
+    padding-left: 20px;
+    margin-top: 10px;
+    border-radius: 24px;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: none;
+}
+
+.text-area {
+    background: rgba(174, 214, 241, 0.25);
+    width: 656px;
+    text-transform: lowercase;
+    color: rgb(21, 61, 88);
+}
+
+::placeholder {
+    color: #3a6292
+}
+
+.text-area:focus {
+    outline: none
+}
+
+.mensaje {
+    background: rgba(247, 220, 111, 0.25);
+    background-image: url("img/Muñeco.png");
+    background-repeat: no-repeat;
+    background-size: 75%;
+    background-position: center;
+    color: rgb(107, 87, 7);
+    margin-left: 15px;
+
+}
+
+.mensaje:focus {
+    outline: none
+}
+
+button {
+    display: inline-block;
+    height: 67px;
+    border-radius: 24px;
+    border: none;
+    font-family: "Rokkitt", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.btn-encriptar {
+    background: rgba(174, 214, 241, 0.25);
+    color: rgb(247, 220, 111);
+    width: 328px;
+    margin-right: 15px;
+    cursor: pointer;
+    
+}
+
+.btn-desencriptar {
+    background: rgba(247, 220, 111, 0.25);
+    color: rgb(10, 56, 113);
+    width: 328px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.btn-copiar {
+    background: rgba(247, 220, 111, 0.25);
+    color: rgb(10, 56, 113);
+    width: 365px;
+    cursor: copy;
+}
+
+.informacion {
+    font-size: 20px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    align-items: center;
+    background: rgba(230, 230, 17, 0.25);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+
+    font-family: "Rokkitt", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+footer img {
+    width: 44px;
+    height: 44px;
+
+}
