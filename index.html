@@ -26,8 +26,9 @@
     </header>
     <main>
         <section>
-            <textarea class="text-area" cols="30" rows="10" placeholder="Ingrese su texto aquí"></textarea>
-            <textarea class="mensaje" cols="30" rows="10"></textarea>
+            <textarea id="text_area" class="text-area" cols="30" rows="10" placeholder="Ingrese su texto aquí"></textarea>
+            <textarea id="mensaje" class="mensaje" cols="30" rows="10" >Ningún mensaje fue encontrado
+            </textarea>
         </section>
 
         <div>
@@ -35,11 +36,11 @@
         </div>
 
         <section>
-            <button class="btn-encriptar" type="submit" onclick="encriptar">
+            <button class="btn-encriptar" type="submit" onclick="btn_encriptar()">
                 Encriptar</button>
-            <button class="btn-desencriptar" type="submit" onclick="desencriptar">
+            <button class="btn-desencriptar" type="submit" onclick="btn_desencriptar()">
                 Desencriptar</button>
-            <button class="btn-copiar" onclick="copiar">Copiar</button>
+            <button id="copiar" class="btn-copiar" onclick="btn_copiar()">Copiar</button>
         </section>
     </main>
 
@@ -49,7 +50,7 @@
             <img src="img/github-mark.png" alt="github">
         </a>
     </footer>
-    
+    <script src="app.js"></script>
 </body>
 
 </html>
